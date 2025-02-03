@@ -1,0 +1,85 @@
+min-h-screen {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(45deg, #2b2d42, #8d99ae);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Spinner */
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #ffffff;
+  border-top: 4px solid #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+/* Keyframe for the spinner */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Error Message */
+.error-message {
+  background-color: #ef4444;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* Log Container */
+.log-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 100%;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.log-item {
+  background-color: #222831;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.log-item p {
+  font-size: 1.2rem;
+}
+
+.log-item .label {
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+.log-item .value {
+  color: #ffffff;
+}
+
+/* Title */
+.title {
+  color: #3b82f6;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
